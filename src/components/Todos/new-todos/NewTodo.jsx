@@ -18,6 +18,7 @@ const NewTodos = () => {
     }
     if(!priority){
       alert('You must enter a priority')
+      value = []
     }
     addTodo(value, priority)
     setPriority('')
@@ -52,7 +53,7 @@ const NewTodos = () => {
                     setPriority(selectedPriority);
                   }}
                 >
-                  <option value="High priority"> </option>
+                  <option disabled selected value>Select</option>
                   <option value="High priority">High </option>
                   <option value="Medium priority">Medium </option>
                   <option value="Low priority">Low </option>

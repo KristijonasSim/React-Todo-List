@@ -61,12 +61,16 @@
   border-bottom: 1px solid black;
   font-size: 15px;
   letter-spacing: 2px;
+  outline: none;
 
 }
 .SelectArea select:focus{
   border: none;
   border-bottom: 1px solid black;
-  
+}
+.SelectArea select:active{
+  border: none;
+  border-bottom: 1px solid black;
 }
 
 .NewContainerTop{

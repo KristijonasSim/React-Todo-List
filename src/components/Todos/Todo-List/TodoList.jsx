@@ -1,15 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './TodoList.scss'
-import Sidebar from '../../sidebar/sidebar';
-import NewTodos from '../new-todos/NewTodo';
+
 import { useGlobalContext } from '../../sidebar/Context'
 
 
 
 const TodoList = () => {
   const { todos, removeTodo } = useGlobalContext()
-  console.log(todos)
-
 
   return (
         <div className='todoListContainer'>
@@ -23,11 +20,14 @@ const TodoList = () => {
                   return(
                     <div key={id}>
                         <div className='SingleTodo'>
-                          <div className='log'>
+                          <div className='text'>
                            {text}
                           </div>
-                          <div className='kog'>
-                           {priority}
+                          <div className='priorityBox'>
+                              <div className={`${priority === 'High priority' ? 'high' : priority === 'Low priority' ? 'low' : 'medium'}`}></div>                          
+                                <div className='priority'>
+                                  {priority}
+                                </div>
                           </div>
                            <div>
                              <button 
