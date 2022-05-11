@@ -1,0 +1,67 @@
+.boxas{
+  width: 200px;
+  background-color: #E2E6E9;
+  position: absolute;
+  left: 0;
+}
+
+.sidebar{
+  width: 200px;
+  transition: all 1.7s ease-out;
+  transform: translateY(-150%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.links a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 48px;
+  text-decoration: none;
+  color: #696E6E;
+  border-bottom: 2px solid rgb(178, 178, 178);
+  transition: all 0.5s ease;
+  font-size: 20px;
+  background-color: white;
+}
+
+.links a:hover {
+  background-color: rgb(57,218,207);
+  color: white;
+}
+
+.show-sidebar{
+  transform: translateY(0);
+}
+
+.btn{
+  color: rgb(30, 28, 28);
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+  letter-spacing: 1px;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 54px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.search-bar{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.icon{
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: 140px;
+}
